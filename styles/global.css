@@ -1,0 +1,40 @@
+:root {
+  --primare-color: #be3144;
+  --secondary-color: #45567d;
+  --tertiary-color: #303841;
+  --suplementary-color: #51557E;
+
+  --white-color: #fff;
+  --black-blue:#041C32;
+
+  --hover-color: #4070f4;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6rem;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 120rem;
+  overflow: hidden;
+  width: 95%;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
