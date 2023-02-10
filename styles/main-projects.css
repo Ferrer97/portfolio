@@ -27,6 +27,7 @@
 }
 .card__list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0 2rem 1rem;
   align-items: center;
   justify-content: space-evenly;
@@ -39,6 +40,14 @@
   padding: 1.2rem;
   border-radius: 30px;
   margin: 0 auto;
+  aspect-ratio: 9/6;
+  object-fit: cover;
+}
+
+.card__tech{
+  color: var(--white-color);
+  border: solid 1px #006ae8;
+  padding: .4rem .8rem;
 }
 .card__link {
   background-color: var(--hover-color);
@@ -61,3 +70,14 @@
   background-color: #0276ff;
 }
 
+@media (min-width: 990px) {
+  .card {
+    max-width: 30%;
+  }
+  .projects__grid {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+}
